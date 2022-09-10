@@ -18,8 +18,15 @@ k = float(input("Digite o valor de k: "))
 
 
 vetor_resultado = escalarProd(u, k)
+vetor_rounded = [ '%.2f' % elem for elem in vetor_resultado ]
 
-print("Vetor Soma: (", end="")
+'''print("Vetor: (", end="")
 for index in range(len(vetor_resultado)):
-    print(f"{vetor_resultado[index]:.2f}, ", end=None)
-print(end=")")
+    print(f"{vetor_resultado[index]:.2f}, ", end="")
+print(")")'''
+
+print("Vetor: (", end="")
+print(', '.join(map(str, vetor_rounded)), end="")
+print(")", end="")
+
+
