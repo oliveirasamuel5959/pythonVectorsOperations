@@ -1,8 +1,4 @@
 
-
-from posixpath import split
-
-
 def somaVector(u,v):
     uv_sum = []
     for i in range(3):
